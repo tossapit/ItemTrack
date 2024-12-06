@@ -19,3 +19,13 @@ export interface ResourceData {
     current: number;
     threshold: number;
   }
+
+  export interface Resource {
+    id: string;
+    name: string;
+    type: string;
+    totalQuantity: number;
+    availableQuantity: number;
+    status: 'available' | 'maintenance' | 'unavailable';
+    lastUpdated: Date;
+  }

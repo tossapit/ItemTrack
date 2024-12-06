@@ -38,9 +38,8 @@ interface Alert {
     CommonModule,
     ErrorMessageComponent,
     LoadingSpinnerComponent,
-  ]
+  ],
 })
-
 export class DashboardComponent implements OnInit {
   isLoading = false;
   error: string | null = null;
@@ -119,8 +118,8 @@ export class DashboardComponent implements OnInit {
             backgroundColor: 'rgba(34, 197, 94, 0.9)',
             borderRadius: 6,
             maxBarThickness: 40,
-            barPercentage: 0.8, 
-            categoryPercentage: 0.9 
+            barPercentage: 0.8,
+            categoryPercentage: 0.9,
           },
           {
             label: 'In Use',
@@ -129,7 +128,7 @@ export class DashboardComponent implements OnInit {
             borderRadius: 6,
             maxBarThickness: 40,
             barPercentage: 0.8,
-            categoryPercentage: 0.9
+            categoryPercentage: 0.9,
           },
         ],
       },
